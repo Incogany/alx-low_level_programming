@@ -2,7 +2,7 @@
 
 /**
  * main - Prints the alphabetic
- * 
+ *
  * Return: Always (Success)
  */
 int main(void)
@@ -15,4 +15,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-

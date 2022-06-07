@@ -15,10 +15,10 @@ int main(void)
 	printf("%lu, %lu, ", bk1, bk2);
 	for (count = 2; count < 98; count++)
 	{
-		if (bk1 + bk2 > LARGEST ||fr2 > 0|| fr1 > 0)
+		if (bk1 + bk2 > LARGEST || fr2 > 0 || fr1 > 0)
 		{
 			h1 = (bk1 + bk2) / LARGEST;
-			h2 = (bk1+bk2) % LARGEST;
+			h2 = (bk1 + bk2) % LARGEST;
 			h3 = fr1 + fr2 + h1;
 			fr1 = fr2, fr2 = h3;
 			bk1 = bk2, bk2 = h2;

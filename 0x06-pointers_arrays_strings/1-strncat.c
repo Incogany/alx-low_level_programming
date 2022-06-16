@@ -10,7 +10,7 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int length; j;
+	int length, j;
 	/* j is a counter for n bytes of src to be concatenated */
 	/* length = length of destination string */
 

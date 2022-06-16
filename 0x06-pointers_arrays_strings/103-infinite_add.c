@@ -21,7 +21,7 @@ char *infinite_ad(char *n1, char *n2, char *r, int size_r)
 	for (i -= 1, j -=, k = 0; < size_r - 1; i--, j--, k++)
 	{
 		n = m;
-		if (i >= o)
+		if (i >= 0)
 			n += n1[1] - '0';
 		if (j >= 0)
 			n += n2[j] - '0';

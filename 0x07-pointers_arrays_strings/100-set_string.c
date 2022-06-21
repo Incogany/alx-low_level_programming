@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * set_string - sets the value of a pointer to char
  * @s: pointer to pointer
- * @ti: pointer to char
+ * @to: pointer to char
  *
  * Return: void.
  */

@@ -22,7 +22,7 @@ int _strlen_recursion(char *s)
  *
  * Return: 0 if not palindrome, 1 if palindrome.
  */
-int helperFunction(char *s, int f1, int li)
+int helperFunction(char *s, int fi, int li)
 {
 	if (fi < li && s[fi] == s[li])
 	{

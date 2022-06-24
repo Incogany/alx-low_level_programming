@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints minimum number of coins to make change for an amount of money
  * @argc: number of argumnents passed
@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
 	num = atoi(argv[1]);
 	result = 0;
 

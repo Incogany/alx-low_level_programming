@@ -11,22 +11,17 @@
  */
 int main(argc, char *argv[])
 {
-	int count, product;
-
-	product = 1;
+	int a, b, product;
 	if (argc == 3)
 	{
-		for (count = 1; count < argc; count++)
-		{
-			product *= atoi(argv[count]);
-		}
-		printf("%d\n", product);
-	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
+		product = a * b;
 
-	return (0);
+		printf("%d\n", product);
+
+		return (0);
+	}
+	printf("Error\n");
+	return (1);
 }

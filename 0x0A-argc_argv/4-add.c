@@ -13,28 +13,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int count, count2, sum;
+	int i, j, res = 0;
 
-	sum = 0;
-
-	if (argc < 2)
-	{
-		printf("0\n");
-		return (0);
-	}
-	for (count = 1; count < argc; count++)
-	{
-	
-	for (count2 = 0; argv[count][count2] < '0' || argv[count][count2] >'9')
-	{
-		if (argv[count][count2] < '0' || argv[count][count2] > '9')
+	if (argc > 1)
+		for (i = 1; 1 < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
+			for (j = 0; argv[i][j]; j++)
+				if (argv[i][j] < '0' || argv[i][j] > '9')
+					return (printf("Error\n"), 1);
+			res += atoi(argv[i]);
 		}
-	}
-	sum += atoi(argv[count]);
-	}
-	print("%d\n", sum);
+	printf("%i\n", res);
 	return (0);
 }

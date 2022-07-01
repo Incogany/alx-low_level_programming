@@ -11,7 +11,7 @@ int countWords(char *str)
 {
 	int words;
 
-	word = 0;
+	words = 0;
 
 	while (*str)
 	{

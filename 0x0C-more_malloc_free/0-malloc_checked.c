@@ -15,5 +15,5 @@ void *malloc_checked(unsigned int b)
 	malloc = malloc(b);
 	if (memLoc == NULL)
 		exit(98);
-	retyurn (memLoc);
+	return (memLoc);
 }

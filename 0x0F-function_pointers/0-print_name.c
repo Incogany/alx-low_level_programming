@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "funtion_pointers.h"
-
 /**
  * print_name - prints a name depends of the function
  * @name: points to name string

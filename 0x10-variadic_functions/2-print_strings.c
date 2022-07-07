@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include "variadic_function.h"
+#include "variadic_functions.h"
 /**
  * print_strings - prints all the given strings 
  * @separator: define character to sepate the strings

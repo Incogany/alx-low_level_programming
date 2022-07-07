@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include "variadic_functions.h"
+#include <stdlib.h>
 /**
  * print_numbers - prints all the given nu,mbers
  * @separator: define character to separate the numbers

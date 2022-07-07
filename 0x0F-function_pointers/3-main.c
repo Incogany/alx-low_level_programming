@@ -10,7 +10,7 @@
 int main(int argc, char **argv)
 {
 	int a, b, answer;
-	int (*fuction)(int, int);
+	int (*function)(int, int);
 
 	if (argc != 4)
 	{
@@ -24,8 +24,8 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	funtion = get_op_func(*(argv + 2));
-	if (!fuction)
+	function = get_op_func(*(argv + 2));
+	if (!function)
 	{
 		puts("Error");
 		exit(99);

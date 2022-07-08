@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include "variadic_functions.h"
+#include <stdlib.h> 
 /**
  * print_all - prints all the given strings
  * @format: the kind c for char s for sting i for int f for float
@@ -9,41 +9,40 @@
 void print_all(const char * const format, ...)
 {
 	unsigned int i = 0;
-	char *str;
-	va_list arguments;
+	char *s, *separator;
+	va_list args;
 
-	va_start(arguments, format);
-	while (format && format[i] != '\0')
+	va_start(args, format);
+
+	separatorn= "";
+
+	i = 0;
+	while (format && format[i])
 	{
 		switch (format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(arguments, int));
+				printf("%s%c", separator, va_arg(args, int));
 				break;
 			case 'i':
-				printf("%i", va_arg(arguments, int));
+				printf("%s%d", separator, va_arg(args, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(arguments, int));
+				printf("%s%f", separator, va_arg(args, double));
 				break;
 			case 's':
-				str = va_arg(arguments, char *);
-				if (str)
-				{
-					printf("%s", str);
-					break;
-				}
-				printf("(nil)");
+				s = va_arg(args, char *);
+				if (s == NULL)
+					s = "(nil)";
+				printf("%s%s", separator, s);
 				break;
 			default:
 				i++;
 				continue;
 		}
-		if (format[i + 1] != '\0')
-			printf(", ");
-
+		separator = ", ";
 		i++;
 	}
-	va_end(arguments);
+	va_end(args);
 	printf("\n");
 }

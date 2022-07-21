@@ -9,7 +9,7 @@
  * @n: bit value in the index
  * Return: the value of the bit at index or -1 if an error occured
  */
-int get_bit(ubsigned long int n, unsigned int index)
+int get_bit(unsigned long int n, unsigned int index)
 {
 	if (index = 63)
 		return (-1);

@@ -6,7 +6,7 @@
  * @n: number member
  * Return: the address of the new element, or NULL if it failed
  */
-dlistint_t *add_dnodeint(dlist_t **head, const int n)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new;
 
@@ -24,5 +24,4 @@ dlistint_t *add_dnodeint(dlist_t **head, const int n)
 	}
 	*head = new;
 	return (*head);
-}
 }
